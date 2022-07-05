@@ -1,0 +1,86 @@
+@import 'src/assets/stylesheets/variables_/palette';
+@import 'src/assets/stylesheets/mixins/responsive';
+
+.login-page__ {
+
+  &container__ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &logo {
+      margin-top: 62px;
+      min-width: 130px;
+      height: auto;
+    }
+
+    &welcome {
+      margin-top: 41px;
+      font-weight: 400;
+      font-family: sans-serif;
+      font-size: 24px;
+      line-height: 34px;
+      text-align: center;
+      color: $main-text;
+    }
+
+    &form {
+      width: 315px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &title {
+      margin-top: 21px;
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: left;
+      color: $main-text;
+    }
+
+    &input {
+      width: 100%;
+      margin: 15px 0 10px !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+
+      .MuiFilledInput-root {
+        background-color: unset;
+      }
+
+      .MuiFilledInput-underline:after {
+        border-bottom: 2px solid $main-blue;
+      }
+
+      .MuiInputLabel-root.Mui-focused {
+        color: $main-blue;
+      }
+    }
+
+    &forgot {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 22px;
+      text-align: right;
+      color: $gray-text !important;
+      width: 100%;
+    }
+
+    &login-btn {
+      margin-top: 46px !important;
+      max-width: 285px;
+      background: $main-blue !important;
+      border-radius: 6px;
+      padding: 14px 115px !important;
+      text-align: center !important;
+    }
+  }
+}
